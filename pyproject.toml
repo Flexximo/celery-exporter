@@ -7,11 +7,11 @@ profile = "black"
 multi_line_output = 3
 skip = '.virtualenv,.venv,.poetry,.poetry-cache'
 
-[tool.poetry]
+[project]
 name = "celery-exporter"
 version = "0.5.4"
-description = ""
-authors = ["Dani Hodovic <dani.hodovic@gmail.com>"]
+description = "Celery metrics exporter"
+authors = [ { name = "Dmitriy Ravdel", email = "di.ravdel@gmail.com" } ]
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -45,5 +45,5 @@ celery-types = "^0.11.0"
 pre-commit = "^2.19.0"
 
 [build-system]
-requires = ["poetry-core>=1.0.0a5"]
-build-backend = "poetry.core.masonry.api"
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
